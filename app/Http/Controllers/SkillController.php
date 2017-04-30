@@ -10,7 +10,7 @@ class SkillController extends Controller
 {
   public function index()
   {
-    $skills = Skill::all();
+    $skills = Skill::orderBy('proficiency', 'desc')->get();
     return view('skill.index', compact('skills'));
   }
 

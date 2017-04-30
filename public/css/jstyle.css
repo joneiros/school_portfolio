@@ -26,3 +26,40 @@ h1, h2, h3
 {
     color: gainsboro;
 }
+
+.panel
+{
+    float: right;
+    margin: 10px 10px 10px 10px;
+    width: 90%;
+
+    background: transparent url(../images/transparent.png) repeat;
+}
+
+.panel img
+{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px 0 5px ;
+    padding: 0 0 0 0 ;
+}
+
+.panel a
+{
+    text-decoration: none;
+    text-decoration-color: whitesmoke;
+    color: whitesmoke;
+}
+
+
+.panel-default>a>.panel-heading
+{
+    background-color: #757f94;
+    height: 30px;
+    padding: 5px 5px 0 0;
+}
+.panel-default>a>.panel-heading:hover
+{
+    background-color: #424858;
+}

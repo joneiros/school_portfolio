@@ -17,16 +17,22 @@
         <div class="j_main_container">
             <div class="j_main">
                 <h1> Skills </h1>
-                <div class="panel panel-default">
-                    <div class="panel-heading">Users</div>
+
+
 
                             @foreach($skills as $skill)
-                                <p>{{$skill->name}}</p>
-                                <p>{{$skill->description}}</p>
-                                {!! Html::image($skill->picture) !!}
+                                <div class="panel panel-default">
+                                    <a href="/resume">
+                                        <div class="panel-heading">
+                                            {!! Html::image($skill->picture) !!}
+                                            {{$skill->name}}
+                                        </div>
+                                        <p>{{$skill->description}}</p>
+                                    </a>
 
+                                </div>
                             @endforeach
-                </div>
+
 
             </div>
         </div>

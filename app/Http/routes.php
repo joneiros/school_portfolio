@@ -13,6 +13,7 @@
 
 Route::get('/', function () { return view('welcome');});
 Route::get('/skills', 'SkillController@index');
+Route::get('skills/{id}', 'SkillController@show');
 Route::get('/resume', function () { return view('resume');});
 Route::get('/work', 'WorkSampleController@index');
 Route::get('/awards', function () { return view('awards');});

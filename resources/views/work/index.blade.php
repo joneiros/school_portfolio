@@ -16,7 +16,14 @@
         </nav>
         <div class="j_main_container">
             <div class="j_main">
-                <h1> Work Samples </h1>
+                <h1>
+                    <?php
+                    if(isset($skill))
+                    {
+                    echo $skill->name . ' ';
+                    }
+                    ?>
+                    Work Samples </h1>
 
 
 
@@ -27,7 +34,13 @@
                                 {{$sample->title}}
                             </div>
                             <p>{{$sample->blurb}}</p>
-                            <p>Related Skill: {{$sample->skill->name}}</p>
+                            <?php
+                            if(!isset($skill))
+                            {
+                               echo '<p>Related Skill: '. $sample->skill->name. '</p>';
+                            }
+                            ?>
+
                         </a>
 
                     </div>

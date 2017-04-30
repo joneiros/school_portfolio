@@ -17,12 +17,9 @@
         <div class="j_main_container">
             <div class="j_main">
                 <h1> Skills </h1>
-
-
-
                             @foreach($skills as $skill)
                                 <div class="panel panel-default">
-                                    <a href="/resume">
+                                    <a href="/skills/{{$skill->id}}">
                                         <div class="panel-heading">
                                             {!! Html::image($skill->picture) !!}
                                             {{$skill->name}}

@@ -14,6 +14,6 @@
 Route::get('/', function () { return view('welcome');});
 Route::get('/skills', 'SkillController@index');
 Route::get('/resume', function () { return view('resume');});
-Route::get('/work', function () { return view('work');});
+Route::get('/work', 'WorkSampleController@index');
 Route::get('/awards', function () { return view('awards');});
 Route::get('/questions', function () { return view('questions');});

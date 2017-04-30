@@ -29,7 +29,7 @@
 
                 @foreach($samples as $sample)
                     <div class="panel panel-default">
-                        <a href="/resume">
+                        <a href="/work/{{$sample->id}}">
                             <div class="panel-heading">
                                 {{$sample->title}}
                             </div>

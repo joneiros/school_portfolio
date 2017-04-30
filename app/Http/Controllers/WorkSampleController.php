@@ -16,4 +16,10 @@ class WorkSampleController extends Controller
   }])->get();
     return view('work.index', compact('samples'));
   }
+
+  public function show($id)
+  {
+    $sample = WorkSample::find($id);
+    return view('work.show', compact('sample'));
+  }
 }

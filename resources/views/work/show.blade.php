@@ -9,7 +9,7 @@
                     <li ><a href="/resume">Resumé</a></li>
                     <li ><a href="/skills">Skills Inventory</a></li>
                     <li class="current"><a href="/work">Work Samples</a></li>
-                    <li><a href="/awards">Awards & Certificates</a></li>
+                <!--<li><a href="/awards">Awards & Certificates</a></li>-->
                     <li><a href="/questions">Questions</a></li>
                 </ul>
             </div>
@@ -27,6 +27,7 @@
                 ?>
 
                 <p>{{$sample->experience}}</p>
+                <h3>Learning Reflection</h3>
                 <p>{{$sample->reflection}}</p>
 
 

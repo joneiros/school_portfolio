@@ -9,7 +9,7 @@
                     <li ><a href="/resume">Resumé</a></li>
                     <li><a href="/skills">Skills Inventory</a></li>
                     <li><a href="/work">Work Samples</a></li>
-                    <li><a href="/awards">Awards & Certificates</a></li>
+                    <!--<li><a href="/awards">Awards & Certificates</a></li>-->
                     <li><a href="/questions">Questions</a></li>
                 </ul>
             </div>

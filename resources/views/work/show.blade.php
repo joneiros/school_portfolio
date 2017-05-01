@@ -16,7 +16,7 @@
         </nav>
         <div class="j_main_container">
             <div class="j_main">
-                <h1>Work Samples - {{$sample->title}} </h1>
+                <h1>Work Samples: {{$sample->title}} </h1>
                 <h2>{{$sample->blurb}}</h2>
                 <p>{{$sample->description}}</p>
                 <?php

@@ -11,9 +11,9 @@ class WorkSampleController extends Controller
 {
   public function index()
   {
-    $samples = WorkSample::with(['skill' => function ($query) {
-    $query->orderBy('start_date', 'desc');
-  }])->get();
+    $samples = WorkSample::with('skill')
+      ->orderBy('start_date', 'desc')
+      ->get();
     return view('work.index', compact('samples'));
   }
 

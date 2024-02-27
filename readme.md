@@ -1,4 +1,33 @@
-# Laravel PHP Framework
+# School Portfolio
+Portfolio website documenting various college projects.
+
+## Archival Notes
+This is a useful time capsule, but not useful beyond that. Running a whole
+Laravel service just for a portfolio seems unnecessary now that I've spent
+some time working with the JAM Stack and [Astro](https://astro.build).
+
+Taking a look at this repo for the first time in a few years, I was
+initially flabbergasted seeing a commit saying:
+```
+removed the gitignore that was stopping the database from being pushed
+```
+However, thinking about it now, I think it was the right call considering the
+other choices I made while building that repo. The fact that the entire database
+is only 225Kb means that I don't have too much overhead pushing it into GitHub,
+and now, years later, I still have access to all the project descriptions I
+stored rather than having them lost on some old machine or obscured in some
+cloud hosting service.
+
+Still, if I had it to do over again, I'd probably push all that text into static
+pages. The database layer for this whole application probably could've been
+avoided. Ah well, such is hindsight, and the insight of many extra years in the
+field.
+
+---
+---
+---
+
+## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
 [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
